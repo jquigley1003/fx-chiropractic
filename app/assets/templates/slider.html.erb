@@ -1,0 +1,22 @@
+<div class="slider">
+  <div class="slide" ng-repeat="image in images" ng-show="image.visible">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8">
+        <img ng-src="{{image.src}}" class="img-responsive animated fadeInLeft" />
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <ul class="slide-ul">
+          <li class="slide-text animated fadeInUpBig">{{image.title}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="arrows">
+    <a href="#" ng-click="prev()">
+      <%= image_tag("prev-arrow.png", alt: "Previous Image", class: "img-responsive") %>
+    </a>
+    <a href="#" ng-click="next()">
+      <%= image_tag("next-arrow.png", alt: "Next Image", class: "img-responsive") %>
+    </a>
+  </div>
+</div>

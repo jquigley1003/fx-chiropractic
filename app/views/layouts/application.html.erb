@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="fxChiropracticApp">
+<head>
+  <title>FxChiropractic</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+  <div ng-include="'_navbar.html'"></div>
+  <%= yield %>
+  <div ng-include="'_footer.html'"></div>
+</div>
+</body>
+</html>
