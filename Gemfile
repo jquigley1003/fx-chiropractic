@@ -19,13 +19,14 @@ gem 'font-awesome-sass'
 gem 'responders', '~> 2.0'
 gem 'bower-rails'
 gem 'sprockets', '2.12.3'
+gem 'devise'
 
 
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'pry' 
+  gem 'pry'
 end
 
 group :production do
