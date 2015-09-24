@@ -20,6 +20,8 @@ gem 'responders', '~> 2.0'
 gem 'bower-rails'
 gem 'sprockets', '2.12.3'
 gem 'devise'
+gem 'mail_form'
+gem 'simple_form'
 
 
 group :development, :test do

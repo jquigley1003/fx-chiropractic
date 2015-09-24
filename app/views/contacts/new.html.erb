@@ -1,0 +1,40 @@
+<!-- BEGIN CONTENT -->
+      <div class="col-md-12">
+        <h1>Contact Us</h1>
+        <div class="content-page custom-brown-bckgrnd">
+            <div class="col-md-9 col-sm-9">
+              <p>Fill out form below, and we'll respond via email.</p>
+              
+              <!-- BEGIN FORM-->             
+              <%= simple_form_for @contact, html: {class: 'form-horizontal' } do |f| %>
+                <%= f.input :name, required: true %>
+                <%= f.input :email, required: true %>
+                <%= f.input :message, as: :text, input_html: { rows: '5' }, required: true %>
+                <div class= "hidden">
+                  <%= f.input :nickname, hint: 'Leave this field blank!' %>
+                </div>
+                <div>
+                  </br>
+                  <%= f.button :submit, 'Send message', class: "btn btn-primary" %>
+                  <%= button_tag "Cancel", type: 'reset', class: "btn btn-default"%>
+                </div>
+              <% end %>
+              <!-- END FORM-->
+
+            </div>
+
+<!--             <div class="col-md-3 col-sm-3 sidebar2">
+              <h2>Our Contact Information</h2>
+              <address>
+                <strong>FX Chiropractic</strong><br>
+                Any Street<br>
+                Atlanta, GA 30309<br>
+                <abbr title="Phone">P:</abbr> (404) 555-1212<br>
+                <abbr title="Fax">F:</abbr> (404) 555-1212
+              </address>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+      <!-- END CONTENT

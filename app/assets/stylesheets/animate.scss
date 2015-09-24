@@ -1172,6 +1172,33 @@ Copyright (c) 2015 Daniel Eden
   animation-name: fadeIn;
 }
 
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .4;
+  }
+  60% {
+    opacity: .6;
+  }
+  80% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }      
+}
+
+.fadeInSlow {
+  -webkit-animation-name: fadeInSlow;
+  animation-name: fadeInSlow;
+  animation-duration: 2s;
+}
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
