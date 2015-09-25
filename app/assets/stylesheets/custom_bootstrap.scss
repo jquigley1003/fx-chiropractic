@@ -1,4 +1,13 @@
 .navbar-default {
   background: none !important;
   border: none !important;
+  padding: 10px 0px 10px 0px;
+}
+
+.navbar-brand {
+  padding: 0px 0px 0px 10px !important;
+}
+
+.navbar-default li {
+  font-size: 20px !important;
 }
