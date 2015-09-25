@@ -21,7 +21,13 @@ angular.module('fxChiropracticApp', [
       url:'/home-two',
       templateUrl: 'home_two.html',
       controller: 'HomeCtrl as homeCtrl'
-    });                                 
+    })
+  $stateProvider
+    .state('homeThree', {
+      url:'/home-three',
+      templateUrl: 'home_three.html',
+      controller: 'HomeCtrl as homeCtrl'
+    });                                             
     console.log('ui-router is alive!');
   }])
   .run(['$state', function($state) {

@@ -10,13 +10,13 @@
   background:#f2f2f2;
 }
 
-.slider{
+.slider {
   padding: 5px;
   margin: 0px auto;
   background: #d0d0d0;
 }
 
-.slide{
+.slide {
   padding: 0px;
   margin: 0px auto;
   background: #d0d0d0;
@@ -28,11 +28,42 @@
   margin: 0px auto;
 }
 
-.slide-ul{
+.slide-ul {
   text-align: center;
 }
 
-.slide-text{
+.slide-text {
+  color: #014481;
+  padding: 0px 50px 0px 0px;
+  margin: 10px auto;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 30px;
+  list-style-type: none;
+  z-index: 10;
+}
+.slider-3 {
+  padding: 5px;
+  margin: 0px auto;
+  background: #d0d0d0;
+}
+
+.slide-3 {
+  padding: 0px;
+  margin: 0px auto;
+  background: #d0d0d0;
+  /*box-shadow: 0px 0px 15px #999;*/
+}
+
+.slide-3 img {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.slide-3-ul{
+  text-align: center;
+}
+
+.slide-3-text{
   color: #014481;
   padding: 0px 50px 0px 0px;
   margin: 10px auto;
@@ -44,6 +75,12 @@
 
 @media all and (max-width: 599px) and (min-width: 320px) {
   .slide-text{
+      font-size: 15px;
+  }
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+  .slide-3-text{
       font-size: 15px;
   }
 }
@@ -86,7 +123,30 @@
   margin: 0px auto;
 }
 
+.home-info-3 {
+  color: #014481;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.home-info-3 h2 {
+  text-align: center;
+}
+
+.home-info-3 img{
+  margin: 0px auto;
+}
+
 /* Footer */
+
+.social-icon-box {
+  margin: auto;
+  text-align: center;
+}
+
+.social-icon-box div {
+  display: inline-block;
+}
 
 .social-icon {
   height: 40px;
