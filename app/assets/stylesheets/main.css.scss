@@ -101,8 +101,12 @@
   padding: 0px;
 }
 
-.home-info h2 {
+.home-info h1, h2 {
   text-align: center;
+}
+
+.home-info p {
+  margin: 0px auto;
 }
 
 .home-info img{
@@ -113,10 +117,6 @@
   color: #ffffff;
   margin: 0px auto;
   padding: 0px;
-}
-
-.home-info-2 h2 {
-  text-align: center;
 }
 
 .home-info-2 img{
