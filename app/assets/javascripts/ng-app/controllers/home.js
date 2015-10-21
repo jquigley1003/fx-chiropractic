@@ -25,6 +25,5 @@ angular.module('fxChiropracticApp')
       {src: 'http://i.imgur.com/0g5iOrq.jpg', title: 'Three: FX Chiropractic'},
       {src: 'http://i.imgur.com/Cm3FoZj.jpg', title: 'Three: The Best Chiropractic Care in Atlanta!'},
       {src: 'http://i.imgur.com/Sbi3OEm.jpg', title: 'Three: FX Chiropractic & Performance'}
-    ];    
-   
+    ];      
   }]);

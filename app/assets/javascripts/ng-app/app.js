@@ -1,5 +1,6 @@
 angular.module('fxChiropracticApp', [
   'ngAnimate',
+  'ngResource',
   'ui.router',
   'templates'
 ])
@@ -7,19 +8,7 @@ angular.module('fxChiropracticApp', [
   $stateProvider
     .state('home', {
       url:'/',
-      templateUrl: 'home.html',
-      controller: 'HomeCtrl as homeCtrl'
-    })
-  $stateProvider
-    .state('homeTwo', {
-      url:'/home-two',
       templateUrl: 'home_two.html',
-      controller: 'HomeCtrl as homeCtrl'
-    })
-  $stateProvider
-    .state('homeThree', {
-      url:'/home-three',
-      templateUrl: 'home_three.html',
       controller: 'HomeCtrl as homeCtrl'
     })
   $stateProvider
@@ -27,13 +16,43 @@ angular.module('fxChiropracticApp', [
       url:'/about',
       templateUrl: 'about.html',
       controller: 'HomeCtrl as homeCtrl'
+    })    
+  $stateProvider
+    .state('services', {
+      url:'/services',
+      templateUrl: 'services.html',
+      controller: 'HomeCtrl as homeCtrl'
+    })
+  $stateProvider
+    .state('schedule', {
+      url:'/schedule',
+      templateUrl: 'schedule.html',
+      controller: 'HomeCtrl as homeCtrl'
+    })
+  $stateProvider
+    .state('blog', {
+      url:'/blog',
+      templateUrl: 'blog.html',
+      controller: 'HomeCtrl as homeCtrl'
+    })    
+  $stateProvider
+    .state('contactUs', {
+      url:'/contact-us',
+      templateUrl: 'contact.html',
+      controller: 'ContactCtrl as contactCtrl'
+    })    
+  $stateProvider
+    .state('homeThree', {
+      url:'/home-three',
+      templateUrl: 'home_three.html',
+      controller: 'HomeCtrl as homeCtrl'
     })
   $stateProvider
     .state('aboutTwo', {
       url:'/about-two',
       templateUrl: 'about_two.html',
       controller: 'HomeCtrl as homeCtrl'
-    });                                                                
+    });                                                         
     console.log('ui-router is alive!');
   }])
   .run(['$state', function($state) {
