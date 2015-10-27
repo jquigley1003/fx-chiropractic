@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" ng-controller="HomeCtrl">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -18,7 +18,7 @@
         <li><a ui-sref="services" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Services<span class="sr-only">(current)</span></a></li>
        <li><a ui-sref="schedule" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Schedule An Appointment<span class="sr-only">(current)</span></a></li>
        <li><a ui-sref="blog" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Blog<span class="sr-only">(current)</span></a></li>
-       <li><a ui-sref="contactUs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact<span class="sr-only">(current)</span></a></li>                               
+       <li><a ng-anchor="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact<span class="sr-only">(current)</span></a></li>                               
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Pages<span class="caret"></span></a>
           <ul class="dropdown-menu">

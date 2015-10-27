@@ -1,7 +1,9 @@
 angular.module('fxChiropracticApp')
-  .controller('HomeCtrl',['$scope', function ($scope) {
+  .controller('HomeCtrl',['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
     
     var homeCtrl = this;
+
+    $scope.active = false;
 
     homeCtrl.images = [
       {src: 'http://i.imgur.com/p2kKPqj.jpg', title: 'FX Chiropractic & Performance'},
@@ -25,5 +27,24 @@ angular.module('fxChiropracticApp')
       {src: 'http://i.imgur.com/0g5iOrq.jpg', title: 'Three: FX Chiropractic'},
       {src: 'http://i.imgur.com/Cm3FoZj.jpg', title: 'Three: The Best Chiropractic Care in Atlanta!'},
       {src: 'http://i.imgur.com/Sbi3OEm.jpg', title: 'Three: FX Chiropractic & Performance'}
-    ];      
+    ];
+
+    homeCtrl.currentUrl = "";
+    // When the location changes, capture the state of the full URL.
+    $scope.$on(
+        "$locationChangeSuccess",
+        function locationChanged() {
+            homeCtrl.currentUrl = $location.url();
+            $scope.active = !$scope.active;     
+        }
+    );
+
+    homeCtrl.gotoBottom = function() {
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash('contact');
+
+      // call $anchorScroll()
+      $anchorScroll();
+    };
   }]);
