@@ -1,5 +1,9 @@
 @import 'bootstrap';
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Gloria+Hallelujah|Pontano+Sans|Hammersmith+One|Lilita+One|Grand+Hotel|Numans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville:400,700|Gloria+Hallelujah|Pontano+Sans|Hammersmith+One|Lilita+One|Grand+Hotel|Numans);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 .container-2 {
   padding: 0px 10px;
