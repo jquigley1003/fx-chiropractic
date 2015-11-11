@@ -1,5 +1,5 @@
 angular.module('fxChiropracticApp')
-  .controller('ContactCtrl',['$scope', 'contactService', function ($scope, contactService) {
+  .controller('ContactCtrl',['$scope', '$state', 'contactService',  function ($scope, $state, contactService) {
     $scope.newContact = new contactService();
 
     $scope.submitForm = function() {
@@ -7,6 +7,7 @@ angular.module('fxChiropracticApp')
         if (contactService.create) {
           console.log($scope.formData.name)
           $scope.formData = {};
+          $state.go('home');
         }
         else{
           console.log($scope.formData.message)
