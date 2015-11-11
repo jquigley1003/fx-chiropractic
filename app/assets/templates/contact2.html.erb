@@ -1,0 +1,54 @@
+<div>
+  <div class="row container-2" style="background: #8fb5d7; padding: 0px 10px;">
+    <div class="col-md-10 home-info">
+      <h1>Contact Us</h1>
+      <h3>Fill out form below, and we'll respond via email.</h3>     
+      <!-- BEGIN FORM-->             
+      <form class="form-horizontal" name="contactForm" ng-submit="submitForm()" novalidate>
+        <div class="form-group" ng-class="{ 'has-error': contactForm.name.$touched && contactForm.name.$invalid }">
+          <label for="name" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="name" class="form-control" ng-model="formData.name" required>
+              <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$touched">
+                <p ng-message="minlength">Your name is too short.</p>
+                <p ng-message="maxlength">Your name is too long.</p>
+                <p ng-message="required">Your name is required.</p>
+              </div>
+          </div>
+        </div>        
+        <div class="form-group" ng-class="{ 'has-error': contactForm.email.$touched && contactForm.email.$invalid }">
+          <label for="email" class="col-sm-2 control-label">E-mail</label>
+          <div class="col-sm-10">
+            <input type="email" name="email" class="form-control" ng-model="formData.email" required>
+              <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$touched">
+                <p ng-message="minlength">Your email is too short.</p>
+                <p ng-message="maxlength">Your email is too long.</p>
+                <p ng-message="required">Your email is required.</p>
+              </div>
+          </div>
+        </div>        
+        <div class="form-group" ng-class="{ 'has-error': contactForm.message.$touched && contactForm.message.$invalid }">
+          <label for="message" class="col-sm-2 control-label">Message</label>
+          <div class="col-sm-10">
+            <textarea name="message" class="form-control" ng-model="formData.message" rows="10" required></textarea>
+              <div ng-messages="contactForm.message.$error" ng-show="contactForm.message.$touched">
+                <p ng-message="minlength">Your message is too short.</p>
+                <p ng-message="maxlength">Your message is too long.</p>
+                <p ng-message="required">Your message is required.</p>
+              </div>
+          </div>
+        </div>
+        <div class="form-group" ng-hide="contactForm.name.$invalid || contactForm.email.$invalid || contactForm.message.$invalid">
+          <div class="col-sm-offset-2 col-sm-10">      
+            <input type="submit" value="Send!" name="submit">
+          </div>
+        </div>
+        <div class="form-group">      
+          <div ng-class="{'submissionMessage' : submission}" ng-bind="submissionMessage">
+          </div>
+        </div>
+      </form>
+      <!-- END FORM-->
+    </div>
+  </div>
+</div>

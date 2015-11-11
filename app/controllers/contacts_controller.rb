@@ -1,5 +1,4 @@
 class ContactsController < ApplicationController
-  respond_to :json
 
   def new
     @contact = Contact.new

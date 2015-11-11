@@ -1,6 +1,7 @@
 angular.module('fxChiropracticApp', [
   'ngAnimate',
   'ngResource',
+  'ngMessages',
   'ui.router',
   'templates'
 ])
@@ -38,8 +39,8 @@ angular.module('fxChiropracticApp', [
   $stateProvider
     .state('contactUs', {
       url:'/contact-us',
-      templateUrl: 'contact.html',
-      controller: 'ContactCtrl as contactCtrl'
+      templateUrl: 'contact2.html',
+      controller: 'ContactCtrl'
     })    
   $stateProvider
     .state('homeThree', {

@@ -4,16 +4,6 @@ Rails.application.routes.draw do
 
   root 'application#index'
 
-  namespace :api, defaults: {format: :json} do
-    namespace :v1 do
-      resources :contacts
-    end
-  end 
-
-  # scope "api" do
-  #   resources :contacts
-  # end
-
   match 'contact_us' => 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
 
