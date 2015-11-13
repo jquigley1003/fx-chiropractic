@@ -276,7 +276,39 @@ text-align: left;
   color:white;
 }
 
+/* Contact Form transitions and animations */
+
 .change-red{
   font-weight:bold;
   color: #014481;
+}
+
+.my-messages {
+  transition:0.5s linear all;
+}
+.my-messages.ng-active {
+  // messages are visible
+  opacity:1;
+}
+.my-messages.ng-inactive {
+  // messages are hidden
+  opacity:0;
+}
+
+.message {
+  transition:0.5s linear all;
+}
+
+.message.ng-enter {
+  opacity:0;
+}
+.message.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.message.ng-leave {
+  opacity:1;
+}
+.message.ng-leave.ng-leave-active {
+  opacity:0;
 }
