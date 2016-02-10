@@ -111,6 +111,7 @@ body {
 
 .home-info p {
   margin: 0px auto;
+  padding: 0px 25px;
 }
 
 .home-info img{
@@ -285,6 +286,7 @@ text-align: left;
 
 .my-messages {
   transition:0.5s linear all;
+  transform:0.3s;
 }
 .my-messages.ng-active {
   // messages are visible
@@ -297,18 +299,23 @@ text-align: left;
 
 .message {
   transition:0.5s linear all;
+  transform:0.3s;
 }
 
 .message.ng-enter {
   opacity:0;
+  transform: scale3d(2,2,2);
 }
 .message.ng-enter.ng-enter-active {
   opacity:1;
+  transform: scale3d(1,1,1);
 }
 
 .message.ng-leave {
   opacity:1;
+
 }
 .message.ng-leave.ng-leave-active {
   opacity:0;
+
 }
