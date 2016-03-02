@@ -5,7 +5,7 @@ angular.module('fxChiropracticApp', [
   'ui.router',
   'templates'
 ])
-  .config(['$stateProvider', function ($stateProvider) {
+  .config(['$stateProvider','$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url:'/',
@@ -22,7 +22,7 @@ angular.module('fxChiropracticApp', [
     .state('services', {
       url:'/services',
       templateUrl: 'services.html',
-      controller: 'HomeCtrl as homeCtrl'
+      controller: 'ServiceOfferCtrl as serviceOfferCtrl'
     })
   $stateProvider
     .state('schedule', {
@@ -53,9 +53,6 @@ angular.module('fxChiropracticApp', [
       url:'/about-two',
       templateUrl: 'about_two.html',
       controller: 'HomeCtrl as homeCtrl'
-    });                                                         
-    console.log('ui-router is alive!');
+    });
+    $urlRouterProvider.otherwise('/');
   }])
-  .run(['$state', function($state) {
-    $state.go('home'); //make a transition to home state when app starts
-  }]);

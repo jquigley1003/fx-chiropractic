@@ -5,6 +5,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  color: inherit;
+  &:hover{
+    color: #ffffff;
+  }
+}
+
 .container-2 {
   padding: 0px 10px;
   margin: 0px auto;
@@ -318,4 +325,22 @@ text-align: left;
 .message.ng-leave.ng-leave-active {
   opacity:0;
 
+}
+
+/* Special Formatting */
+
+.italic {
+  font-style: italic;
+}
+
+.padding-left-15p {
+  padding-left: 15%;
+}
+
+.padding-left-40p {
+  padding-left: 40%;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
 }
