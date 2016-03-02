@@ -14,11 +14,11 @@ angular.module('fxChiropracticApp')
     ];
 
     homeCtrl.imagesTwo = [
-      {src: 'http://i.imgur.com/dW1NnQ6.jpg', title: 'Two: FX Chiropractic & Performance', logoLeft: 'http://i.imgur.com/SEbyXNI.png', logoRight: 'http://i.imgur.com/wSfnbi1.png'},
+      {src: '/assets/img00_a.jpg', title: 'One: FX Chiropractic & Performance', logoLeft: 'http://i.imgur.com/SEbyXNI.png', logoRight: 'http://i.imgur.com/wSfnbi1.png'},
       {src: 'http://i.imgur.com/ui3o5Dv.jpg', title: 'Two: Visit Us At Our New Location!'},
-      {src: 'http://i.imgur.com/0g5iOrq.jpg', title: 'Two: FX Chiropractic'},
-      {src: 'http://i.imgur.com/Cm3FoZj.jpg', title: 'Two: The Best Chiropractic Care in Atlanta!'},
-      {src: 'http://i.imgur.com/Sbi3OEm.jpg', title: 'Two: FX Chiropractic & Performance'}
+      {src: 'http://i.imgur.com/0g5iOrq.jpg', title: 'Three: FX Chiropractic'},
+      {src: 'http://i.imgur.com/Cm3FoZj.jpg', title: 'Four: The Best Chiropractic Care in Atlanta!'},
+      {src: 'http://i.imgur.com/Sbi3OEm.jpg', title: 'Five: FX Chiropractic & Performance'}
     ];    
 
     homeCtrl.imagesThree = [
