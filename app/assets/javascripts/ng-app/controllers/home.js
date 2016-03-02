@@ -14,11 +14,11 @@ angular.module('fxChiropracticApp')
     ];
 
     homeCtrl.imagesTwo = [
-      {src: '/assets/img00_a.jpg', title: 'One: FX Chiropractic & Performance', logoLeft: 'http://i.imgur.com/SEbyXNI.png', logoRight: 'http://i.imgur.com/wSfnbi1.png'},
-      {src: 'http://i.imgur.com/ui3o5Dv.jpg', title: 'Two: Visit Us At Our New Location!'},
-      {src: 'http://i.imgur.com/0g5iOrq.jpg', title: 'Three: FX Chiropractic'},
-      {src: 'http://i.imgur.com/Cm3FoZj.jpg', title: 'Four: The Best Chiropractic Care in Atlanta!'},
-      {src: 'http://i.imgur.com/Sbi3OEm.jpg', title: 'Five: FX Chiropractic & Performance'}
+      {src: '/assets/slider-atl-skyline-piedmont.jpg', title: 'Grand Opening is April 2016 in Midtown', logoLeft: '/assets/fx-logo-left.png', logoRight: '/assets/fx-logo-right.png'},
+      {src: '/assets/slider-man-celebrating.jpg', title: 'Feel Better.  f(x) Chiropractic and Performance'},
+      {src: '/assets/slider-man-running.jpg', title: 'Be Active & Stay Active.  f(x) Chiropractic and Performance'},
+      {src: '/assets/slider-washington-monument.jpg', title: 'f(x) Chiropractic and Performance:  The Best Chiropractic Care in Atlanta!'},
+      {src: '/assets/slider-man-woman-running.jpg', title: 'Come See Us Now.  f(x) Chiropractic and Performance'}
     ];    
 
     homeCtrl.imagesThree = [
