@@ -29,6 +29,11 @@ a {
   padding: 0px;
   margin: 0px auto;
   background: #d0d0d0;
+  &:hover{
+    .arrows{
+      display: block;
+    }
+  }
 }
 
 .slide {
@@ -102,13 +107,28 @@ a {
 }
 
 .arrows{
- position: absolute;
- top: 45px;
- left: 40px;
+  display: none;
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 8%;
+  padding: 0px;
+  margin: 0px auto;
+  z-index: 10;
 }
 
 .arrows img{
   height: 32px;
+}
+
+.float-left{
+  position: relative;
+  float: left;
+}
+
+.float-right{
+  position: relative;
+  float: right;
 }
 
 .home-info {
