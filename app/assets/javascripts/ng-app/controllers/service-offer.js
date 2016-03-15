@@ -9,9 +9,11 @@ angular.module('fxChiropracticApp')
 
       serviceOfferCtrl.showDetails = divDescription;
 
+      var serviceDescription = divDescription;
+
       // set the location.hash to the id of
       // the element you wish to scroll to.
-      $location.hash('serviceDescription');
+      $location.hash(serviceDescription);
 
       // call $anchorScroll()
       $anchorScroll();

@@ -140,7 +140,7 @@ a {
 .home-info {
   color: #014481;
   margin: 0px auto;
-  padding: 60px 20px 50px 0px;
+  padding: 20px 20px 50px 0px;
 }
 
 .home-info h1, h2, h3 {
@@ -325,10 +325,6 @@ text-align: left;
 
 /* Scroll to bottom when clicking Contact Us in Navbar */
 
-.white {
-  color:white;
-}
-
 /* Contact Form transitions and animations */
 
 .change-red{
@@ -372,7 +368,66 @@ text-align: left;
 
 }
 
+/* Formatting for Services Page */
+
+#artDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+#caDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+#iastmDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+#ftwDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+#sfmaDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+#ftDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+#msepDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+#ctDescription {
+  p{
+    font-size: 20px;
+  }
+}
+
+
 /* Special Formatting */
+
+.white {
+  color:white;
+}
+
+.font-20 {
+  font-size: 20px;
+}
 
 .italic {
   font-style: italic;

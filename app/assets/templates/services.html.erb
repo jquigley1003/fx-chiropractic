@@ -1,83 +1,77 @@
-<div>
-  <div class="row">
-    <div class="col-xs-12 banner-image">
-      <%= image_tag("slider-man-running.jpg", alt: "FX Chiropractic", class: "img-responsive") %>
-    </div>
-  </div>  
-  <div class="row container-2" style="background: #8fb5d7; padding: 0px 10px;">
-    <div class="col-md-6 home-info">
-      <h1>Services We Offer</h1>
-      <%= image_tag("circle02.png", alt: "FX Chiropractic", class: "img-responsive") %>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('artDescription')"><a>Active Release Technique</a></h3>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('caDescription')"><a>Chiropractic Adjustments</a></h3>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('iastmDescription')"><a>Instrument Assisted Soft Tissue Mobilization</a></h3>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('ftwDescription')"><a>Fascial Tissue Work</a></h3>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('sfmaDescription')"><a>Selective Functional Movement Assessment</a></h3>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('ftDescription')"><a>Functional Taping</a></h3>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('msepDescription')"><a>Mobility and Stability Exercise Prescriptions</a></h3>
-      <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('ctDescription')"><a>Conditions Treated</a></h3>   
-    </div>
-    <div class="col-md-6 home-info">
-      <%= image_tag("fx-chiro-logo-65h.png", alt: "FX Chiropractic", class: "img-responsive padding-top-20", id: "serviceDescription") %>
-      <div ng-show="serviceOfferCtrl.showDetails == 'artDescription'" id="artDescription">
-        <h3>Active Release Technique</h3>
-        <p>Active Release Technique (“ART”) is a patented, non-invasive, soft-tissue treatment process that both locates and breaks down the scar tissue and fibrotic adhesions, which cause pain, stiffness, decreased range of motion, numbness, and physical dysfunction associated with Repetitive Strain Injuries (“RSI”). ART is used both for the treatment of RSI's, as well as the improvement of athletic performance. Musculoskeletal conditions usually resolve much faster with ART than other modalities. ART has become one of the most sought after sports injury techniques in professional and amateur sports due to its high degree of effectiveness.</p><br>
-        <p>Why is ART different?</p><br>
-        <p>ART is a highly successful approach to injuries of muscles, tendons, nerves, and fascia. ART is not massage, physical therapy, or chiropractic care. While those procedures relieve muscle and motion dysfunction, they do not specifically address the underlying problems caused by scar tissue formation.</p><br>
-        <p>Every ART session is a combination of examination and treatment. The ART provider uses his hands to evaluate the texture, tightness, and movement of the involved soft tissues. Combining precisely directed tension with very specific patient movements yields an effectively treated structure. There are over 500 specific treatment protocols that can be a applied to the human body.</p>
-      </div>
-      <div ng-show="serviceOfferCtrl.showDetails == 'caDescription'" id="caDescription">
-        <h3>Chiropractic Adjustments</h3>
-        <p>A chiropractic adjustment, also known as chiropractic manipulation, manual manipulation, or spinal manipulation, is a common therapeutic treatment for several conditions seen in our clinic. It is commonly applied to the joints in the spine but can also be used as a form of treatment in the shoulder, elbow, wrist, hand, pelvis, hip, knee, ankle or foot.</p><br>
-        <p>A chiropractic adjustment refers to a chiropractor applying manipulation to the identified joint(s) that have abnormal movement patterns or fail to function normally.</p><br>
-        <p>The objective of this chiropractic adjustment is to increase range of motion, reduce nerve irritability and improve function within the joint. Very commonly, an adjustment will help reduce pain and discomfort experienced by the patient. At f(x) Chiropractic and Performance, an adjustment to any part of the body is thoroughly considered before it is applied.</p>
-      </div>
-      <div ng-show="serviceOfferCtrl.showDetails == 'iastmDescription'" id="iastmDescription">
-        <h3>Instrument Assisted Soft Tissue Mobilization</h3>
-        <p>Instrument-assisted soft tissue mobilization enables us to effectively address scar tissue and fascial restrictions resulting in improved patient outcomes. Rooted in ancient Chinese medicine, “Gua Sha” was typically applied to the skin with a spoon with the intent of getting rid of bad blood. Fast forward to modern times, the tools have evolved a bit as well as what is really occurring on a cellular level when a treatment is applied.</p><br>
-        <p>The technique uses specially designed stainless steel instruments, along with appropriate therapeutic exercise, to specifically detect and effectively treat areas exhibiting soft tissue fibrosis or chronic inflammation. The instruments also are used diagnostically to follow the kinetic chain, to locate and treat the cause of the symptom as well as the specific area of pain.</p>
-      </div>
-      <div ng-show="serviceOfferCtrl.showDetails == 'ftwDescription'" id="ftwDescription">
-        <h3>Fascial Tissue Work</h3>
-        <p>Fascia is a specialized system of the body that has an appearance similar to a spider's web or a sweater. Fascia is very densely woven, covering and penetrating every muscle, bone, nerve, artery and vein, as well as, all of our internal organs including the heart, lungs, brain and spinal cord. The most interesting aspect of the fascial system is that it is not just a system of separate coverings. It is actually one continuous structure that exists from head to toe without interruption.</p><br>
-        <p>Fascia plays an important role in the support and function of our bodies, since it surrounds and attaches to all structures. In the normal healthy state, the fascia is relaxed and wavy in configuration. It has the ability to stretch and move without restriction. Trauma, such as a fall, car accident, whiplash, surgery or just habitual poor posture and repetitive stress injuries all cause the fascia to lose its pliability. It becomes tight, restricted, and a source of tension to the rest of the body which can alter function.</p><br>
-        <p>We use two very effective techniques specifically designed to address the fascial system: <em>Fascial Manipulation</em> and <em>Fascial Distortion Model</em>.</p>
-      </div>
-      <div ng-show="serviceOfferCtrl.showDetails == 'sfmaDescription'" id="sfmaDescription">
-        <h3>Selective Functional Movement Assessment</h3>
-        <p>The SFMA is the movement based diagnostic system, designed to assess 7 fundamental movement patterns in those with known musculoskeletal pain. The assessment provides an efficient method to systematically find the cause of symptoms, not just the source, by logically breaking down dysfunctional patterns and diagnosing their root cause as either a mobility problem or a stability/motor control problem.</p><br>
-        <p>This systematic process allows clinicians to clearly match their intervention to the main problem of the patient. This model efficiently integrates the concepts of altered motor control, the neurodevelopmental perspective, and regional interdependence into musculoskeletal practice.</p><br>
-        <p>Dr. Shuman is advanced level certified and uses the SFMA with almost every patient to improve patient outcomes.</p>
-      </div>
-      <div ng-show="serviceOfferCtrl.showDetails == 'ftDescription'" id="ftDescription">
-        <h3>Functional Taping</h3>
-        <p>RockTape is the world’s best kinesiology tape. It can be used to treat sports and non-sports injuries, including shin splints, plantar fasciitis, runner’s knee and back pain. RockTape microscopically lifts the skin away from the muscle and fascia below, creating a decompressive effect. Stretchier, stickier and stronger than the competition, RockTape is preferred by athletes and medical professionals throughout the world.</p>
-      </div>
-      <div ng-show="serviceOfferCtrl.showDetails == 'msepDescription'" id="msepDescription">
-        <h3>Mobility and Stability Exercise Prescriptions</h3>
-        <p>It is essential that once your tissues and joints are restored to their proper function and alignment that you train the body to keep them there. At f(x) Chiropractic and Performance, we give each of our patients exercises and stretching programs unique to their situation.  What works for one patient may not work for another.  No part of your treatment program is cookie-cutter and each visit will be different from the last.</p>
-      </div>
-      <div ng-show="serviceOfferCtrl.showDetails == 'ctDescription'" id="ctDescription">
-        <h3>Conditions Treated</h3>
-        <ul class="padding-left-40p">
-          <li>Neck Pain</li>
-          <li>Back Pain</li>
-          <li>Herniated Discs</li>
-          <li>Sciatica</li>
-          <li>Headaches</li>
-          <li>Hip Pain</li>
-          <li>Piriformis Syndrome</li>
-          <li>Knee Pain</li>
-          <li>Iliotibial Band Syndrome</li>
-          <li>Ankle Sprain/Strain</li>
-          <li>Achilles Tendonitis</li>
-          <li>Plantar Fasciitis</li>
-          <li>Tennis Elbow</li>
-          <li>Golfers Elbow</li>
-          <li>Carpal Tunnel Syndrome</li>
-          <li>Wrist Pain</li>
-        </ul>
-      </div>      
-    </div>    
+<div class="row">
+  <div class="col-xs-12 banner-image">
+    <%= image_tag("slider-man-running.jpg", alt: "FX Chiropractic", class: "img-responsive") %>
   </div>
+</div>  
+<div class="row container-2" style="background: #8fb5d7; padding: 0px 10px;">
+  <div class="col-md-12 home-info">
+    <h1>Services We Offer</h1>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('artDescription')"><a>Active Release Technique</a></h3>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('caDescription')"><a>Chiropractic Adjustments</a></h3>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('iastmDescription')"><a>Instrument Assisted Soft Tissue Mobilization</a></h3>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('ftwDescription')"><a>Fascial Tissue Work</a></h3>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('sfmaDescription')"><a>Selective Functional Movement Assessment</a></h3>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('ftDescription')"><a>Functional Taping</a></h3>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('msepDescription')"><a>Mobility and Stability Exercise Prescriptions</a></h3>
+    <h3 class="text-left padding-left-15p" ng-click="serviceOfferCtrl.gotoDescription('ctDescription')"><a>Conditions Treated</a></h3>   
+    <div ng-show="serviceOfferCtrl.showDetails == 'artDescription'" id="artDescription">
+      <h3>Active Release Technique</h3>
+      <p>Active Release Technique (“ART”) is a patented, non-invasive, soft-tissue treatment process that both locates and breaks down the scar tissue and fibrotic adhesions, which cause pain, stiffness, decreased range of motion, numbness, and physical dysfunction associated with Repetitive Strain Injuries (“RSI”). ART is used both for the treatment of RSI's, as well as the improvement of athletic performance. Musculoskeletal conditions usually resolve much faster with ART than other modalities. ART has become one of the most sought after sports injury techniques in professional and amateur sports due to its high degree of effectiveness.</p><br>
+      <p>Why is ART different?</p><br>
+      <p>ART is a highly successful approach to injuries of muscles, tendons, nerves, and fascia. ART is not massage, physical therapy, or chiropractic care. While those procedures relieve muscle and motion dysfunction, they do not specifically address the underlying problems caused by scar tissue formation.</p><br>
+      <p>Every ART session is a combination of examination and treatment. The ART provider uses his hands to evaluate the texture, tightness, and movement of the involved soft tissues. Combining precisely directed tension with very specific patient movements yields an effectively treated structure. There are over 500 specific treatment protocols that can be a applied to the human body.</p>
+    </div>
+    <div ng-show="serviceOfferCtrl.showDetails == 'caDescription'" id="caDescription">
+      <h3>Chiropractic Adjustments</h3>
+      <p>A chiropractic adjustment, also known as chiropractic manipulation, manual manipulation, or spinal manipulation, is a common therapeutic treatment for several conditions seen in our clinic. It is commonly applied to the joints in the spine but can also be used as a form of treatment in the shoulder, elbow, wrist, hand, pelvis, hip, knee, ankle or foot.</p><br>
+      <p>A chiropractic adjustment refers to a chiropractor applying manipulation to the identified joint(s) that have abnormal movement patterns or fail to function normally.</p><br>
+      <p>The objective of this chiropractic adjustment is to increase range of motion, reduce nerve irritability and improve function within the joint. Very commonly, an adjustment will help reduce pain and discomfort experienced by the patient. At f(x) Chiropractic and Performance, an adjustment to any part of the body is thoroughly considered before it is applied.</p>
+    </div>
+    <div ng-show="serviceOfferCtrl.showDetails == 'iastmDescription'" id="iastmDescription">
+      <h3>Instrument Assisted Soft Tissue Mobilization</h3>
+      <p>Instrument-assisted soft tissue mobilization enables us to effectively address scar tissue and fascial restrictions resulting in improved patient outcomes. Rooted in ancient Chinese medicine, “Gua Sha” was typically applied to the skin with a spoon with the intent of getting rid of bad blood. Fast forward to modern times, the tools have evolved a bit as well as what is really occurring on a cellular level when a treatment is applied.</p><br>
+      <p>The technique uses specially designed stainless steel instruments, along with appropriate therapeutic exercise, to specifically detect and effectively treat areas exhibiting soft tissue fibrosis or chronic inflammation. The instruments also are used diagnostically to follow the kinetic chain, to locate and treat the cause of the symptom as well as the specific area of pain.</p>
+    </div>
+    <div ng-show="serviceOfferCtrl.showDetails == 'ftwDescription'" id="ftwDescription">
+      <h3>Fascial Tissue Work</h3>
+      <p>Fascia is a specialized system of the body that has an appearance similar to a spider's web or a sweater. Fascia is very densely woven, covering and penetrating every muscle, bone, nerve, artery and vein, as well as, all of our internal organs including the heart, lungs, brain and spinal cord. The most interesting aspect of the fascial system is that it is not just a system of separate coverings. It is actually one continuous structure that exists from head to toe without interruption.</p><br>
+      <p>Fascia plays an important role in the support and function of our bodies, since it surrounds and attaches to all structures. In the normal healthy state, the fascia is relaxed and wavy in configuration. It has the ability to stretch and move without restriction. Trauma, such as a fall, car accident, whiplash, surgery or just habitual poor posture and repetitive stress injuries all cause the fascia to lose its pliability. It becomes tight, restricted, and a source of tension to the rest of the body which can alter function.</p><br>
+      <p>We use two very effective techniques specifically designed to address the fascial system: <em>Fascial Manipulation</em> and <em>Fascial Distortion Model</em>.</p>
+    </div>
+    <div ng-show="serviceOfferCtrl.showDetails == 'sfmaDescription'" id="sfmaDescription">
+      <h3>Selective Functional Movement Assessment</h3>
+      <p>The SFMA is the movement based diagnostic system, designed to assess 7 fundamental movement patterns in those with known musculoskeletal pain. The assessment provides an efficient method to systematically find the cause of symptoms, not just the source, by logically breaking down dysfunctional patterns and diagnosing their root cause as either a mobility problem or a stability/motor control problem.</p><br>
+      <p>This systematic process allows clinicians to clearly match their intervention to the main problem of the patient. This model efficiently integrates the concepts of altered motor control, the neurodevelopmental perspective, and regional interdependence into musculoskeletal practice.</p><br>
+      <p>Dr. Shuman is advanced level certified and uses the SFMA with almost every patient to improve patient outcomes.</p>
+    </div>
+    <div ng-show="serviceOfferCtrl.showDetails == 'ftDescription'" id="ftDescription">
+      <h3>Functional Taping</h3>
+      <p>RockTape is the world’s best kinesiology tape. It can be used to treat sports and non-sports injuries, including shin splints, plantar fasciitis, runner’s knee and back pain. RockTape microscopically lifts the skin away from the muscle and fascia below, creating a decompressive effect. Stretchier, stickier and stronger than the competition, RockTape is preferred by athletes and medical professionals throughout the world.</p>
+    </div>
+    <div ng-show="serviceOfferCtrl.showDetails == 'msepDescription'" id="msepDescription">
+      <h3>Mobility and Stability Exercise Prescriptions</h3>
+      <p>It is essential that once your tissues and joints are restored to their proper function and alignment that you train the body to keep them there. At f(x) Chiropractic and Performance, we give each of our patients exercises and stretching programs unique to their situation.  What works for one patient may not work for another.  No part of your treatment program is cookie-cutter and each visit will be different from the last.</p>
+    </div>
+    <div ng-show="serviceOfferCtrl.showDetails == 'ctDescription'" id="ctDescription">
+      <h3>Conditions Treated</h3>
+      <ul class="padding-left-40p">
+        <li>Neck Pain</li>
+        <li>Back Pain</li>
+        <li>Herniated Discs</li>
+        <li>Sciatica</li>
+        <li>Headaches</li>
+        <li>Hip Pain</li>
+        <li>Piriformis Syndrome</li>
+        <li>Knee Pain</li>
+        <li>Iliotibial Band Syndrome</li>
+        <li>Ankle Sprain/Strain</li>
+        <li>Achilles Tendonitis</li>
+        <li>Plantar Fasciitis</li>
+        <li>Tennis Elbow</li>
+        <li>Golfers Elbow</li>
+        <li>Carpal Tunnel Syndrome</li>
+        <li>Wrist Pain</li>
+      </ul>
+    </div>      
+  </div>    
 </div>
