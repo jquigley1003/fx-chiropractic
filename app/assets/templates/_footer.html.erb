@@ -1,33 +1,64 @@
 <div class="row container-footer" ng-controller='HomeCtrl'>
-  <div class="col-md-4 footer-info-2">
-    <h2>Map</h2>      
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.333888354693!2d-84.3878494!3d33.777875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5046654807d2f%3A0x9e3a150d9112daa7!2s845+Spring+St+NW%2C+Atlanta%2C+GA+30308!5e0!3m2!1sen!2sus!4v1442947907202" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-  <div class="col-md-4 footer-info-2">
-    <h2>Location</h2>
-    <address class="text-center">
+  <div class="col-md-6 footer-info-2">
+    <h2 id="contact">Find Us</h2>
+    <address style="margin-left:18vw;">
       <strong>f(x) Chiropractic &amp; Performance</strong><br>
       100 6th Street, Suite 150<br>
       Atlanta GA 30308<br>
-      <abbr title="Phone">P:</abbr> 404-344-5001<br>
+      <abbr title="Phone">P:</abbr> 404-344-5001 &nbsp;
       <abbr title="Email">E:</abbr> office@fx-chiro.com<br>
-      <a id="contact" ui-sref="contactUs" >Use our CONTACT FORM!</a>
+      <a class="directions" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5825.50106150852!2d-84.38969919397017!3d33.77820519344504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50468fe41d40f%3A0x559c57dede21c460!2s100+6th+St+NE+%23150%2C+Atlanta%2C+GA+30308!5e0!3m2!1sen!2sus!4v1458059493081" target="_blank">GET DIRECTIONS</a><br>
+      <a ui-sref="contactUs" >Use our CONTACT FORM!</a>
     </address>
+    <div class="social-icon-box">
+      <div>
+      <%= image_tag("facebook-white.png", alt: "Facebook", class: "img-responsive social-icon grow-social-icon") %>
+      </div>
+      <div>
+      <%= image_tag("twitter-gray.png", alt: "Twitter", class: "img-responsive social-icon grow-social-icon") %>
+      </div>
+      <div>
+      <%= image_tag("linkedin-gray.png", alt: "LinkedIn", class: "img-responsive social-icon grow-social-icon") %>
+      </div>
+      <div>
+      <%= image_tag("vimeo-gray.png", alt: "Vimeo", class: "img-responsive social-icon grow-social-icon") %>
+      </div>        
+    </div>
   </div>
-  <div class="col-md-4 footer-info-2 social-icon-box">
-    <h2>Social Media</h2>
-    <div>
-    <%= image_tag("facebook-gray.png", alt: "Facebook", class: "img-responsive social-icon grow-social-icon") %>
-    </div>
-    <div>
-    <%= image_tag("twitter-gray.png", alt: "Twitter", class: "img-responsive social-icon grow-social-icon") %>
-    </div>
-    <div>
-    <%= image_tag("linkedin-gray.png", alt: "LinkedIn", class: "img-responsive social-icon grow-social-icon") %>
-    </div>
-    <div>
-    <%= image_tag("vimeo-gray.png", alt: "Vimeo", class: "img-responsive social-icon grow-social-icon") %>
-    </div>        
+  <div class="col-md-6 footer-info-2">
+    <h2>Customer Testimonials</h2>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" style="padding-bottom:100px;">
+          
+          <div class="carousel-caption" style="color: #ffffff;">
+            <p>First Testimonial</p>
+          </div>
+        </div>
+        <div class="item" style="padding-bottom:100px;">
+          
+          <div class="carousel-caption" style="color: #ffffff;">
+            <p>Second Testimonial</p>
+          </div>
+        </div>
+        <div class="item" style="padding-bottom:100px;">
+          
+          <div class="carousel-caption" style="color: #ffffff;">
+            <p>Third Testimonial</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+  <!--     <h2>Map</h2>      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.333888354693!2d-84.3878494!3d33.777875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5046654807d2f%3A0x9e3a150d9112daa7!2s845+Spring+St+NW%2C+Atlanta%2C+GA+30308!5e0!3m2!1sen!2sus!4v1442947907202" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
   </div>
 </div>
 <div class="row panel-footer">

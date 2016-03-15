@@ -173,6 +173,10 @@ a {
 
 /* Footer */
 
+#contact {
+  background:none;
+}
+
 .container-footer {
   background: #575757;
   padding: 0px 10px 20px 10px;
@@ -182,7 +186,7 @@ a {
 .footer-info-2 {
   background: #575757;
   color: #ffffff;
-  margin: 0px auto;
+  margin: 0px 0px 0px 0px;
   padding: 0px;
 }
 
@@ -206,8 +210,10 @@ a {
   overflow: hidden; 
 }
 
-#contact {
-  background:none;
+.directions {
+  color: inherit;
+  text-decoration: none;
+  background: #8fb5d7;
 }
 
 /*MORPH*/
