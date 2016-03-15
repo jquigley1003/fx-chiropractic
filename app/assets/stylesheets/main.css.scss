@@ -6,6 +6,7 @@ body {
 }
 
 a {
+  text-decoration: none;
   color: inherit;
   &:hover{
     color: #ffffff;
@@ -25,10 +26,15 @@ a {
   background:#f2f2f2;
 }
 
-.slider {
-  padding: 0px;
+.banner-image{
+  padding: 20px 0px 0px 0px;
   margin: 0px auto;
-  background: #d0d0d0;
+}
+
+.slider {
+  padding: 20px 0px 0px 0px;
+  margin: 0px auto;
+  background: transparent;
   &:hover{
     .arrows{
       display: block;
@@ -39,7 +45,7 @@ a {
 .slide {
   padding: 0px;
   margin: 0px auto;
-  background: #d0d0d0;
+  background: transparent;
   /*box-shadow: 0px 0px 15px #999;*/
 }
 
@@ -134,7 +140,7 @@ a {
 .home-info {
   color: #014481;
   margin: 0px auto;
-  padding: 0px 0px 20px 0px;
+  padding: 60px 20px 50px 0px;
 }
 
 .home-info h1, h2, h3 {
@@ -150,15 +156,6 @@ a {
   margin: auto;
 }
 
-.home-info-2 {
-  color: #ffffff;
-  margin: 0px auto;
-  padding: 0px;
-}
-
-.home-info-2 img{
-  margin: 0px auto;
-}
 
 .home-info-3 {
   color: #014481;
@@ -176,6 +173,23 @@ a {
 
 /* Footer */
 
+.container-footer {
+  background: #575757;
+  padding: 0px 10px 20px 10px;
+  margin: 0px auto;
+}
+
+.footer-info-2 {
+  background: #575757;
+  color: #ffffff;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.footer-info-2 img{
+  margin: 0px auto;
+}
+
 .social-icon-box {
   margin: auto;
   text-align: center;
@@ -190,6 +204,10 @@ a {
   width: 40px;
   margin: 0px;
   overflow: hidden; 
+}
+
+#contact {
+  background:none;
 }
 
 /*MORPH*/
@@ -300,10 +318,6 @@ text-align: left;
 }
 
 /* Scroll to bottom when clicking Contact Us in Navbar */
-
-#contact {
-  background: #8fb5d7;
-}
 
 .white {
   color:white;

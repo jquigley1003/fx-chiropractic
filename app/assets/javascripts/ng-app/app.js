@@ -5,11 +5,12 @@ angular.module('fxChiropracticApp', [
   'ui.router',
   'templates'
 ])
-  .config(['$stateProvider','$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+  .config(['$stateProvider','$urlRouterProvider', 
+    function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url:'/',
-      templateUrl: 'home_two.html',
+      templateUrl: 'home.html',
       controller: 'HomeCtrl as homeCtrl'
     })
   $stateProvider
@@ -34,8 +35,14 @@ angular.module('fxChiropracticApp', [
     .state('blog', {
       url:'/blog',
       templateUrl: 'blog.html',
-      controller: 'HomeCtrl as homeCtrl'
-    })    
+      controller: 'PostCtrl as postCtrl'
+    })
+  $stateProvider
+    .state('postView', {
+      url:'/post/:id',
+      templateUrl: 'post_view.html',
+      controller: 'PostViewCtrl as postViewCtrl'
+    })           
   $stateProvider
     .state('contactUs', {
       url:'/contact-us',
