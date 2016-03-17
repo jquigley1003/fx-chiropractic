@@ -22,6 +22,7 @@ gem 'sprockets', '2.12.3'
 gem 'devise'
 gem 'mail_form'
 gem 'simple_form'
+gem 'angular_rails_csrf'
 
 
 group :development, :test do
