@@ -45,7 +45,7 @@ angular.module('fxChiropracticApp', [
     })
   $stateProvider
     .state('newPost', {
-      url:'/post-new',
+      url:'/post/new',
       templateUrl: 'post_new.html',
       controller: 'PostNewCtrl as postNewCtrl'
     })                          

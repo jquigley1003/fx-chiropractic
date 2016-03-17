@@ -7,11 +7,10 @@
   <div class="col-md-12 home-info">
     <h1>FX Chiropractic Blog</h1>
     <div class="row" ng-repeat="post in postCtrl.posts">
+      <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }} (Post#{{ post.id }})</a></h2>
       <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
-      <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }}</a></h2>
       <p style="text-align: center;">{{ post.contents | limitTo:25 }}...</p>
-      <p>{{ post.id }}</p>
     </div>
-    <div><p ui-sref="postNew">New Post</div>    
+    <div><p ui-sref="newPost">New Post</div>    
   </div>
 </div>
