@@ -1,11 +1,8 @@
-<div>
-  <div class="row container-2" style="background: #8fb5d7; padding: 0px 10px;">
-    <div class="col-md-12 home-info">
-      <h1>{{ postViewCtrl.showPost.title }}</h1>
-      <p> {{ postViewCtrl.showPost.id }}
-        <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
-        <p>{{ postViewCtrl.showPost.contents }}</p>
-      </div>   
-    </div>
+<div class="row container-2" style="background: #8fb5d7; padding: 0px 10px;">
+  <div class="col-md-12 home-info">
+    <h1>{{ postViewCtrl.showPost.title }}</h1>
+    <p> {{ postViewCtrl.showPost.id }}
+      <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
+    <p>{{ postViewCtrl.showPost.contents }}</p>  
   </div>
 </div>

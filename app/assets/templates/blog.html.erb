@@ -8,9 +8,10 @@
     <h1>FX Chiropractic Blog</h1>
     <div class="row" ng-repeat="post in postCtrl.posts">
       <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
-      <h2><a ng-click="postCtrl.viewPost(post.id)">{{ post.title }}</a></h2>
+      <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }}</a></h2>
       <p style="text-align: center;">{{ post.contents | limitTo:25 }}...</p>
       <p>{{ post.id }}</p>
-    </div>    
+    </div>
+    <div><p ui-sref="postNew">New Post</div>    
   </div>
 </div>
