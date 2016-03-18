@@ -26,6 +26,10 @@ class PostsController < ApplicationController
     respond_with Post.create(post_params)
   end
 
+  def destroy
+    respond_with Post.find(params[:id]).destroy
+  end
+
   private
 
   def post_params
