@@ -11,11 +11,11 @@ angular.module('fxChiropracticApp')
     };
 
     postCtrl.deletePost = function(post) { // Delete a post. Issues a DELETE to /api/posts/:id
-    if (popupService.showPopup('Really delete this?')) {
-      post.$delete(function() {
-        $state.go($state.current, {}, {reload: true}); //redirect to blog page
-      });
-    }
-  };
+      if (popupService.showPopup('Really delete this?')) {
+        post.$delete(function() {
+          $state.go($state.current, {}, {reload: true}); //redirect to blog page
+        });
+      }
+    };
 
   }]);
