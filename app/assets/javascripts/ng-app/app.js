@@ -48,7 +48,13 @@ angular.module('fxChiropracticApp', [
       url:'/post/new',
       templateUrl: 'post_new.html',
       controller: 'PostNewCtrl as postNewCtrl'
-    })                          
+    })
+  $stateProvider
+    .state('editPost', {
+      url:'/post/:id/edit',
+      templateUrl: 'post_edit.html',
+      controller: 'PostEditCtrl as postEditCtrl'
+    })                                              
   $stateProvider
     .state('contactUs', {
       url:'/contact-us',

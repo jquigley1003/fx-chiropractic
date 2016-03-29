@@ -1,7 +1,8 @@
 @import 'bootstrap';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville:400,700|Gloria+Hallelujah|Pontano+Sans|Hammersmith+One|Lilita+One|Grand+Hotel|Numans);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville:400,700|Gloria+Hallelujah|Pontano+Sans|Hammersmith+One|Lilita+One|Grand+Hotel|Numans);*/
 
 body {
+  background: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,8 +18,16 @@ a {
   border-top: double 2px #f2f2f2;
 }
 
+.container-home {
+  background: #8fb5d7;
+  padding: 0px 10px;
+  margin: 0px auto;
+}
+
 .container-2 {
-  padding: 0px 10px 20px 10px;
+  background: #8fb5d7;
+  width: 75vw;
+  padding: 0px 10px;
   margin: 0px auto;
 }
 
@@ -27,6 +36,7 @@ a {
 }
 
 .banner-image{
+  background: #f1f1f4;
   padding: 20px 0px 0px 0px;
   margin: 0px auto;
 }
@@ -178,7 +188,7 @@ a {
 }
 
 .container-footer {
-  background: #575757;
+  background: #575757; 
   padding: 0px 10px 20px 10px;
   margin: 0px auto;
 }
@@ -191,6 +201,13 @@ a {
 }
 
 .footer-info-2 img{
+  margin: 0px auto;
+}
+
+.footer-info-3 {
+  background: #575757;
+  color: #ffffff;
+  padding: 0px 10px 20px 10px;
   margin: 0px auto;
 }
 
