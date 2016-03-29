@@ -22,3 +22,16 @@
   color: #8fb5d7 !important;
   text-shadow: 1px 1px #8fb5d7 !important;
  }
+
+.table>thead>tr>th, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>tbody>tr>td, 
+.table>tfoot>tr>td,
+.table>tbody,
+.table>thead,
+.table>tfoot{
+  border-top: none !important; 
+  border-bottom: none !important; 
+}
