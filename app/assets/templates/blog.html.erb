@@ -5,18 +5,41 @@
 </div>    
 <div class="row container-2">
   <div class="col-md-12 home-info">
-    <h1>FX Chiropractic Blog</h1>
-    <div class="text-center">    
-      <a class="btn btn-success" ui-sref="newPost">New Post</a>
+    <h1 style="text-align: left;">FX Chiropractic Blog</h1>
+    <div>    
+      <a class="btn btn-success text-left" ui-sref="newPost">New Post</a>
     </div>
-    <div class="row" ng-repeat="post in postCtrl.posts">
-      <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }} (Post#{{ post.id }})</a></h2>
-      <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
-      <p class="text-center">{{ post.contents | limitTo:25 }}...</p>
-      <div class="text-center">
-        <a class="btn btn-primary" ui-sref="viewPost({id: post.id})">View</a>
-        <a class="btn btn-danger"  ng-click="postCtrl.deletePost(post)">Delete</a> 
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row text-center" ng-repeat="post in postCtrl.posts"><br>
+          <div class="col-md-4">              
+            <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
+          </div>
+          <div class="col-md-8">
+            <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }} (Post#{{ post.id }})</a></h2>
+            <p>{{ post.contents | limitTo:25 }}...</p>
+            <div>
+            <a class="btn btn-primary" ui-sref="viewPost({id: post.id})">View</a>
+            <a class="btn btn-danger"  ng-click="postCtrl.deletePost(post)">Delete</a> 
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="col-md-4">
+      <h2>Categories and Date Search</h2>
+      <ul class="padding-left-30p">
+        <li>Neck Pain</li>
+        <li>Back Pain</li>
+        <li>Knee Pain</li>
+        <li>Wrist Pain</li>
+        <li>Headaches</li>
+        <li>Nutrition</li>
+        <li>Products</li>
+        <li>Wrist Pain</li>
+        <li>May 2015</li>
+        <li>June 2015</li>
+        <li>July 2015</li>        
+      </ul>
     </div>   
   </div>
 </div>
