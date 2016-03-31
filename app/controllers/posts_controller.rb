@@ -27,7 +27,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    respond_with Post.find(params[:id])
+    respond_with Post.find(params[:id]).update(post_params)
   end
 
   def destroy

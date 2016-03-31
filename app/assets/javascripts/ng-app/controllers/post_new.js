@@ -5,6 +5,7 @@ angular.module('fxChiropracticApp')
     postNewCtrl = this;
 
     $scope.post = new postService(); // create a new instance
+    
     postNewCtrl.addPost = function(){
       $scope.post.$save(function (){
         $state.go('blog');

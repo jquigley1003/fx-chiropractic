@@ -4,7 +4,7 @@ angular.module('fxChiropracticApp')
 
     postEditCtrl = this;
 
-    postEditCtrl.editPost = function() { // Delete a post. Issues a DELETE to /api/posts/:id
+    postEditCtrl.editPost = function() { // Edit a post. Issues a UPDATE to /api/posts/:id
       postEditCtrl.post.$update(function(){
           $state.go('blog');
       });
