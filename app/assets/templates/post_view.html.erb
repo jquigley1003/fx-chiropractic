@@ -6,7 +6,7 @@
     <div class="text-center">
       <a class="btn btn-default" ui-sref="blog">Back to Blogs</a>
       <a class="btn btn-warning" ng-show="postViewCtrl.user.admin" ui-sref="editPost({id:postViewCtrl.showPost.id})">Edit</a>
-      <a class="btn btn-danger" ng-click="postViewCtrl.deletePost(postViewCtrl.showPost)">Delete</a> 
+      <a class="btn btn-danger" ng-show="postViewCtrl.user.admin" ng-click="postViewCtrl.deletePost(postViewCtrl.showPost)">Delete</a> 
     </div>        
   </div>
 </div>

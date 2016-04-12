@@ -9,14 +9,14 @@ angular.module('fxChiropracticApp')
     };
 
     $scope.register = function(){
-      // $state.go('home');
-      // var message = '<strong>Sorry, We are not accepting registrations at this time.</strong> Please contact us if you have questions.';
-      // Flash.create('warning', message);        
-      // console.log('Controller is not accepting registrations.');
+      $state.go('home');
+      var message = '<strong>Sorry, We are not accepting registrations at this time.</strong> Please contact us if you have questions.';
+      Flash.create('warning', message);        
+      console.log('Controller is not accepting registrations.');
 
 
-      Auth.register($scope.user).then(function(){
-        $state.go('home');
-      })
+      // Auth.register($scope.user).then(function(){
+      //   $state.go('home');
+      // })
     };
   }]);

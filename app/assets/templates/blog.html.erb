@@ -14,11 +14,12 @@
             <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
           </div>
           <div class="col-md-8">
-            <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }} (Post#{{ post.id }})</a></h2>
+            <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }}</a></h2>
+            <p>{{ post.created_at | date:'fullDate' }}</p>
             <p>{{ post.contents | limitTo:25 }}...</p>
             <div>
             <a class="btn btn-primary" ui-sref="viewPost({id: post.id})">View</a>
-            <a class="btn btn-danger" ng-click="postCtrl.deletePost(post)">Delete</a> 
+            <a class="btn btn-danger" ng-show="postCtrl.user.admin" ng-click="postCtrl.deletePost(post)">Delete</a> 
           </div>
         </div>
       </div>
