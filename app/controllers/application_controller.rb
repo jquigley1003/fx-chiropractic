@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
 
   respond_to :json
 
+  before_action :configure_permitted_parameters, if: :devise_controller?
+
   def index    
   end
 
@@ -23,13 +25,7 @@ private
     cookies['XSRF-TOKEN'] = form_authenticity_token if protect_against_forgery?
   end
 
-  # def block_postings!
-  #   unless current_user.admin?
-  #     flash[:notice] = 'You are banned for being naughty!'
-
-  #     redirect_to root_path
-
-  #     return false
-  #   end
-  # end
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.for(:sign_up) << :admin
+  end
 end

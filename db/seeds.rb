@@ -8,5 +8,5 @@
 
 User.delete_all
 
-User.create!(email: "jeff.quigley@wavinghi.com", password: "testing1", admin: true)
-User.create!(name: "office@fx-chiro.com", password: "start0416", admin: true)
+User.create!(email: 'office@fx-chiro.com', encrypted_password: 'start0416', admin: true)
+User.create!(email: 'jeff.quigley@wavinghi.com', encrypted_password: 'start0416', admin: true)
