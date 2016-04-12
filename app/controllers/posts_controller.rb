@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-
   respond_to :json
 
   def index
@@ -38,5 +37,5 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :contents)
-  end  
+  end
 end

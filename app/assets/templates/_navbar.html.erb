@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" ng-controller="HomeCtrl as homeCtrl">
+<nav class="navbar navbar-default" ng-controller="NavCtrl">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -16,9 +16,13 @@
       <ul class="nav navbar-nav">     
         <li class="active"><a ui-sref="about" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">ABOUT<span class="sr-only">(current)</span></a></li>
         <li class="active"><a ui-sref="services" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">SERVICES<span class="sr-only">(current)</span></a></li>
-       <li class="active"><a ui-sref="schedule" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">SCHEDULE<span class="sr-only">(current)</span></a></li>
-       <li class="active"><a ui-sref="blog" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">BLOG<span class="sr-only">(current)</span></a></li>
-       <li class="active"><a ng-click="homeCtrl.gotoBottom()" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">CONTACT<span class="sr-only">(current)</span></a></li>                               
+        <li class="active"><a ui-sref="schedule" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">SCHEDULE<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a ui-sref="blog" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">BLOG<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a ng-click="gotoBottom()" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">CONTACT<span class="sr-only">(current)</span></a></li>
+        <li ng-hide="signedIn"><a ui-sref="login">Log In</a></li>
+        <!-- <li ng-hide="signedIn"><a ui-sref="register">Register</a></li> -->
+        <li ng-show="signedIn"><a href="#/">{{ user.email }}</a></li>
+        <li ng-show="signedIn"><a ng-click="logout()">Log Out</a></li>                               
  <!--        <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Pages<span class="caret"></span></a>
           <ul class="dropdown-menu">

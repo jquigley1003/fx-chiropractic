@@ -2,8 +2,10 @@ angular.module('fxChiropracticApp', [
   'ngAnimate',
   'ngResource',
   'ngMessages',
+  'ngFlash',
   'ui.router',
-  'templates'
+  'templates',
+  'Devise'
 ])
   .config(['$stateProvider','$urlRouterProvider', 
     function ($stateProvider, $urlRouterProvider) {
@@ -62,16 +64,26 @@ angular.module('fxChiropracticApp', [
       controller: 'ContactCtrl'
     })    
   $stateProvider
-    .state('homeThree', {
-      url:'/home-three',
-      templateUrl: 'home_three.html',
-      controller: 'HomeCtrl as homeCtrl'
+    .state('login', {
+      url:'/login',
+      templateUrl: '_login.html',
+      controller: 'AuthCtrl'
+      // onEnter: ['$state', 'Auth', function($state, Auth) {
+      //   Auth.currentUser().then(function (){
+      //     $state.go('home');
+      //   })
+      // }]
     })
   $stateProvider
-    .state('aboutTwo', {
-      url:'/about-two',
-      templateUrl: 'about_two.html',
-      controller: 'HomeCtrl as homeCtrl'
+    .state('register', {
+      url:'/register',
+      templateUrl: '_register.html',
+      controller: 'AuthCtrl'
+      // onEnter: ['$state', 'Auth', function($state, Auth) {
+      //   Auth.currentUser().then(function (){
+      //     $state.go('home');
+      //   })
+      // }]
     });
     $urlRouterProvider.otherwise('/');
   }])

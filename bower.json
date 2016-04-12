@@ -6,7 +6,8 @@
       "angular-ui-router": "latest",
       "angular-resource": "latest",
       "angular-animate": "latest",
-      "angular-messages": "latest"
+      "angular-messages": "latest",
+      "angular-flash-alert": "latest"
     }
   },
   "vendor": {

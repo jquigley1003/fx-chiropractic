@@ -298,39 +298,46 @@ a {
 
 /*flash*/
 .custom-alert-holder {
-  position:absolute;
-  top: 10px;
-  float: left;
-  margin-left: 10px;
+  background-color: #f1f1f4;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
   z-index: 10;
+  text-align: center;
+}
+
+.alert {
+  padding: 0px !important;
+  margin: 0px !important;
+  text-align: center;
 }
 
 .alert-error {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: center;
 }
 
 .alert-alert {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a4a;
-text-align: left;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a4a;
+  text-align: center;
 }
 
 .alert-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: center;
 }
 
 .alert-notice {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: center;
 }
 
 /* angular contact form */

@@ -10,12 +10,12 @@
 <body>
 <div>
   <div ng-include="'_navbar.html'"></div>
-  <div class="custom-alert-holder" >
-  <% flash.each do |name, msg| %>
-    <%= content_tag(:p, msg, class: "alert-notice") %>
-  <% end %>
-  </div>
+
+    <% if notice %><div class="alert alert-info"><%= notice %></div><% end %>
+    <% if alert %><div class="alert alert-warning"><%= alert %></div><% end %>
+<flash-message duration="5000" show-close="true" on-dismiss="myCallback(flash);"></flash-message>
   <%= yield %>
+
   <div class="top-divider"></div>
   <div ng-include="'_footer.html'"></div>
 </div>

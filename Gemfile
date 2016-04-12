@@ -24,6 +24,9 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'angular_rails_csrf'
 
+source "https://rails-assets.org" do
+  gem "rails-assets-angular-devise"
+end
 
 group :development, :test do
   gem 'byebug'

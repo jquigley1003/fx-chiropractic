@@ -5,7 +5,7 @@
 </div>    
 <div class="row container-2">
   <div class="col-md-12 home-info">
-    <h1 style="float: left;">FX Chiropractic Blog <a class="btn btn-success text-left" ui-sref="newPost">New Post</a></h1>        
+    <h1 style="float: left;">FX Chiropractic Blog <a class="btn btn-success text-left" ng-show="postCtrl.user.admin" ui-sref="newPost">New Post</a></h1>       
     <p style="clear: both;">Welcome to the f(x) Chiropractic and Performance Blog!  If you want to learn more about how you can start moving and feeling better right now, you’re in the right place. Here you’ll notice an array of blog topics ranging from the standard low back and neck pain articles to nutrition topics and even products I use in my daily life to help me achieve my personal best. You can search for something specific using the blog post date or keywords to find the content you’re interested in. If there’s a topic that isn’t covered and you’d like my take on it, please contact the office using the form below and I’ll get to it as soon as I can. Enjoy!</p>
     <div class="row">
       <div class="col-md-8">
@@ -18,7 +18,7 @@
             <p>{{ post.contents | limitTo:25 }}...</p>
             <div>
             <a class="btn btn-primary" ui-sref="viewPost({id: post.id})">View</a>
-            <a class="btn btn-danger"  ng-click="postCtrl.deletePost(post)">Delete</a> 
+            <a class="btn btn-danger" ng-click="postCtrl.deletePost(post)">Delete</a> 
           </div>
         </div>
       </div>
