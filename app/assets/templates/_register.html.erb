@@ -8,6 +8,11 @@
       <div class="form-group">
         <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
       </div>
+      <div class="form-group">
+        <label>Admin</label>
+        <input ng-model="user.admin" ng-value="true" type="radio"> True
+        <input ng-model="user.admin" ng-value="false" type="radio"> False
+      </div>
       <input type="submit" class="btn btn-primary" value="Register">
     </form>
   </div>

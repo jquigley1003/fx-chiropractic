@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+
+  before_filter :authenticate_user!, only: [:index, :show]
   respond_to :json
 
   def index
