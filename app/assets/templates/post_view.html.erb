@@ -1,8 +1,9 @@
 <div class="row container-2">
   <div class="col-md-12 home-info">
-    <h1>{{ postViewCtrl.showPost.title }} (Post#{{ postViewCtrl.showPost.id }})</h1>
+    <h1>{{ postViewCtrl.showPost.title }}</h1>
+    <p class="text-center">{{ postViewCtrl.showPost.created_at | date:'fullDate' }}</p>
       <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
-    <p style="text-align: center;">{{ postViewCtrl.showPost.contents }}</p>
+    <p class="text-center">{{ postViewCtrl.showPost.contents }}</p>
     <div class="text-center">
       <a class="btn btn-default" ui-sref="blog">Back to Blogs</a>
       <a class="btn btn-warning" ng-show="postViewCtrl.user.admin" ui-sref="editPost({id:postViewCtrl.showPost.id})">Edit</a>
