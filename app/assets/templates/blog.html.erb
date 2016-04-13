@@ -15,7 +15,7 @@
           </div>
           <div class="col-md-8">
             <h2><a ui-sref="viewPost({id: post.id})">{{ post.title }}</a></h2>
-            <p>{{ post.created_at | date:'fullDate' }}</p>
+            <h4>{{ post.created_at | date:'fullDate' }}</h4>
             <p>{{ post.contents | limitTo:25 }}...</p>
             <div>
             <a class="btn btn-primary" ui-sref="viewPost({id: post.id})">View</a>
