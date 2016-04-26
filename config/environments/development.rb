@@ -26,7 +26,10 @@ Rails.application.configure do
   enable_starttls_auto: true,
   user_name: ENV["GMAIL_USERNAME"],
   password: ENV["GMAIL_PASSWORD"]
-  }  
+  }
+  
+  # Let Paperclip know to look there for ImageMagick
+  Paperclip.options[:command_path] = "/usr/local/bin/" 
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

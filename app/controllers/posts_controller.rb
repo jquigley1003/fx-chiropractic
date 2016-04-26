@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   
   before_filter :authenticate_user!, except: [ :index, :show ]
+  before_filter :process_params, only: [:create, :update]
   respond_to :json
 
   def index
@@ -28,8 +29,32 @@ class PostsController < ApplicationController
   end
 
   def update
-    respond_with Post.find(params[:id]).update(post_params)
+    # if params(:image)
+    #   respond_with Post.find(params[:id]).update(post_params_img)
+    # else
+      respond_with Post.find(params[:id]).update(post_params)
+    # end
   end
+
+  # def update
+  #   result = { status: "failed" }
+
+  #   begin
+  #     params[:image] = parse_image_data(params[:image]) if params[:image]
+  #     post = respond_with Post.find(params[:id]).update(post_params)
+
+  #     if post
+  #       result[:status] = "success"
+  #     end
+  #   rescue Exception => e
+  #     Rails.logger.error "#{e.message}"
+  #   end
+
+
+  #   ensure
+  #     clean_tempfile
+  #   end
+
 
   def destroy
     respond_with Post.find(params[:id]).destroy
@@ -38,6 +63,38 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :contents)
+    params.fetch(:post, {}).permit(:title, :contents, :image)
+  end
+
+  # def parse_image_data(image_data)
+  #   @tempfile = Tempfile.new(params[:image])
+  #   @tempfile.binmode
+  #   @tempfile.write Base64.decode64(image_data[:content])
+  #   @tempfile.rewind
+
+  #   uploaded_file = ActionDispatch::Http::UploadedFile.new(
+  #     tempfile: @tempfile,
+  #     filename: image_data[:filename]
+  #   )
+
+  #  uploaded_file.content_type = image_data[:content_type]
+  #   uploaded_file
+  # end
+
+  # def clean_tempfile
+  #   if @tempfile
+  #     @tempfile.close
+  #     @tempfile.unlink
+  #   end
+  # end
+
+  def post_params_img
+    params.require(:post).permit(:post, :title, :contents, :image)
+  end
+
+  def process_params
+    if params[:file]
+      params[:post][:image] = params[:file]
+    end
   end
 end

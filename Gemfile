@@ -23,6 +23,7 @@ gem 'devise'
 gem 'mail_form'
 gem 'simple_form'
 gem 'angular_rails_csrf'
+gem 'paperclip', '~> 4.2'
 
 source "https://rails-assets.org" do
   gem "rails-assets-angular-devise"

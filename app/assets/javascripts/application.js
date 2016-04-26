@@ -21,5 +21,6 @@
 //= require angular-rails-templates
 //= require angular-devise
 //= require angular-flash-alert
+//= require ng-file-upload
 //= require_tree .
 //= require_tree ../templates

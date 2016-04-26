@@ -31,7 +31,7 @@
     "tag": "v2.2.7",
     "commit": "0ab77f0449e5e095ab05b4b3ef2e8d3cb71d1d51"
   },
-  "_source": "git://github.com/sachinchoolur/angular-flash.git",
+  "_source": "https://github.com/sachinchoolur/angular-flash.git",
   "_target": "*",
   "_originalSource": "angular-flash-alert"
 }

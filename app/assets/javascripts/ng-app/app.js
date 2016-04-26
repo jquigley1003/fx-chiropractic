@@ -3,6 +3,7 @@ angular.module('fxChiropracticApp', [
   'ngResource',
   'ngMessages',
   'ngFlash',
+  'ngFileUpload',
   'ui.router',
   'templates',
   'Devise'
