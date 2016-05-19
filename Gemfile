@@ -24,6 +24,7 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'angular_rails_csrf'
 gem 'paperclip', '~> 4.2'
+gem 'aws-sdk', '< 2.0'
 
 source "https://rails-assets.org" do
   gem "rails-assets-angular-devise"

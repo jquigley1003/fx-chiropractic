@@ -1,11 +1,15 @@
 angular.module('fxChiropracticApp')
 .controller('PostViewCtrl',
-  ['$scope', '$state', '$stateParams', 'postService', 'popupService', 'Auth', 'Flash',
-  function ($scope, $state, $stateParams, postService, popupService, Auth, Flash) {
+  ['$scope', '$state', '$stateParams', '$timeout', 'postService', 'popupService', 'Auth', 'Flash',
+  function ($scope, $state, $stateParams, $timeout, postService, popupService, Auth, Flash) {
 
     postViewCtrl = this;
 
     postViewCtrl.showPost = postService.get({id: $stateParams.id});
+
+    $scope.imageUrl = 'https://s3.amazonaws.com/fx-assets/'+ postViewCtrl.showPost;
+
+    console.log(postViewCtrl.showPost);
 
     postViewCtrl.signedIn = function() {
       Auth.currentUser().then(function(user) {

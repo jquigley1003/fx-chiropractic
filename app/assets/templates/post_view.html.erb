@@ -1,8 +1,9 @@
 <div class="row container-2">
   <div class="col-md-12 home-info">
     <h1>{{ postViewCtrl.showPost.title }}</h1>
-    <h4 class="text-center">{{ postViewCtrl.showPost.created_at | date:'fullDate' }}</h4>
-      <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %> 
+    <h4 class="text-center">{{ postViewCtrl.showPost.created_at | date:'fullDate' }}</h4>     
+      <%= image_tag("person01.jpg", alt: "FX Chiropractic", class: "img-responsive") %>
+    <img src="https://s3.amazonaws.com/fx-assets/posts/images/man-biker-small.jpg" />  
     <p class="text-center">{{ postViewCtrl.showPost.contents }}</p>
     <div class="text-center">
       <a class="btn btn-default" ui-sref="blog">Back to Blogs</a>

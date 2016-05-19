@@ -60,6 +60,13 @@ class PostsController < ApplicationController
     respond_with Post.find(params[:id]).destroy
   end
 
+
+  def file_attachment_url
+    @post =  Post.find(params[:id])
+    @post[:image_url] = @post.image.url(:medium)
+    respond_with(@post.as_json)
+  end
+
   private
 
   def post_params

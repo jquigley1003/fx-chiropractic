@@ -8,8 +8,8 @@
         <div class="form-group" ng-class="{ 'has-error': contactForm.name.$touched && contactForm.name.$invalid }">
           <label for="name" class="col-sm-2 control-label">Name</label>
           <div class="col-sm-10">
-            <input type="text" name="name" class="form-control" ng-model="formData.name" minlength="2" maxlength="20" required>
-              <div ng-messages="contactForm.name.$error" class="my-messages">
+            <input type="text" name="name" class="form-control" ng-model="formData.name" minlength="2" maxlength="20" placeholder="First and Last Name" required>
+              <div ng-messages="contactForm.name.$error" class="my-messages" ng-show="contactForm.name.$touched">
                 <p ng-message="minlength" class="message">Your name is too short.</p>
                 <p ng-message="maxlength" class="message">Your name is too long.</p>
                 <p ng-message="required" class="message">Please provide your name.</p>
@@ -20,7 +20,7 @@
           <label for="email" class="col-sm-2 control-label">E-mail</label>
           <div class="col-sm-10">
             <input type="email" name="email" class="form-control" ng-model="formData.email" ng-pattern="/^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i" required>
-              <div ng-messages="contactForm.email.$error" class="my-messages">
+              <div ng-messages="contactForm.email.$error" class="my-messages" ng-show="contactForm.email.$touched">
                 <p ng-message="pattern" class="message">Your email is invalid.</p>
                 <p ng-message="required" class="message">Please provide your email address.</p>
               </div>
@@ -29,14 +29,39 @@
         <div class="form-group" ng-class="{ 'has-error': contactForm.message.$touched && contactForm.message.$invalid }">
           <label for="message" class="col-sm-2 control-label">Message</label>
           <div class="col-sm-10">
-            <textarea name="message" class="form-control" ng-model="formData.message" ng-minlength="10" ng-maxlength="1000" rows="10" required></textarea>
+            <textarea name="message" class="form-control" ng-model="formData.message" ng-minlength="10" ng-maxlength="1000" rows="10" placeholder="Tell us how we can help you (1,000 characters or less)" required></textarea>
               <div ng-messages="contactForm.message.$error" class="my-messages">
                 <p ng-message="minlength" class="message">Your message should be more than 10 characters.</p>
                 <p ng-message="maxlength" class="message">Your message should be less than 1,000 characters.</p>
-                <p ng-message="required" class="message">Tell us how we can help you.</p>
+                <!-- <p ng-message="required" class="message">Tell us how we can help you.</p> -->
               </div>
           </div>
         </div>
+
+        <div class="form-group" ng-class="{ 'has-error': contactForm.phone.$touched && contactForm.phone.$invalid }">
+          <label for="phone" class="col-sm-2 control-label">phone</label>
+          <div class="col-sm-10">
+            <input type="phone" name="phone" class="form-control" ng-model="formData.phone" minlength="12" maxlength="14" placeholder="Ex: 404-555-1212" required>
+              <div ng-messages="contactForm.phone.$error" class="my-messages" ng-show="contactForm.phone.$touched">
+                <p ng-message="minlength" class="message">Your phone is too short.</p>
+                <p ng-message="maxlength" class="message">Your phone is too long.</p>
+                <p ng-message="required" class="message">Please provide your phone number.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error': contactForm.referral.$touched && contactForm.referral.$invalid }">
+          <label for="referral" class="col-sm-2 control-label">Referred By</label>
+          <div class="col-sm-10">
+            <input type="text" name="referral" class="form-control" ng-model="formData.referral" minlength="2" maxlength="50" placeholder="" required>
+              <div ng-messages="contactForm.referral.$error" class="my-messages" ng-show="contactForm.referral.$touched">
+                <p ng-message="minlength" class="message">Too short</p>
+                <p ng-message="maxlength" class="message">Too long.</p>
+                <p ng-message="required" class="message">Please tell us who referred you, or how you heard about us.</p>
+              </div>
+          </div>
+        </div>
+
         <div class="form-group" ng-hide="contactForm.name.$invalid || contactForm.email.$invalid || contactForm.message.$invalid">
           <div class="col-sm-offset-2 col-sm-10">      
             <input type="submit" value="Send!" name="submit">
