@@ -1,17 +1,18 @@
-#README for FX Chiropractic <br/>
+# README for FX Chiropractic <br/>
 
-##September 10, 2015<br /><br />
+## September 10, 2015<br /><br />
 
 
-##Overview
+## Overview
 
 An Atlanta-based chiropractic office.
+* [FX Chiropractic](https://fx-chiropractic.herokuapp.com "FX Chiropractic")
 
 
-##User Stories
+## User Stories
 
 
-##Technologies Used
+## Technologies Used
 * Ruby 2.2.0
 * Rails 4.2.0
 * PostgreSQL Database
